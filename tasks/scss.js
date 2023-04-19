@@ -20,7 +20,7 @@ const scss = () => {
     .pipe(shorthand())
     .pipe(groupCssMediaQueries())
     .pipe(gulp.dest(path.scss.dest, { sourcemaps: true }))
-    .pipe(rename(app.renameConf))
+    .pipe(rename(app.cssRenameConf))
     .pipe(csso())
     .pipe(gulp.dest(path.scss.dest, { sourcemaps: true }));
 };
