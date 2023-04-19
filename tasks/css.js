@@ -8,6 +8,7 @@ import shorthand from "gulp-shorthand";
 import groupCssMediaQueries from "gulp-group-css-media-queries";
 
 import path from "../config/path.js";
+import app from "../config/app.js"
 
 const css = () => {
   return gulp
@@ -18,7 +19,7 @@ const css = () => {
     .pipe(shorthand())
     .pipe(groupCssMediaQueries())
     .pipe(gulp.dest(path.css.dest, { sourcemaps: true }))
-    .pipe(rename({ suffix: ".min" }))
+    .pipe(rename(app.renameConf))
     .pipe(csso())
     .pipe(gulp.dest(path.css.dest, { sourcemaps: true }));
 };
