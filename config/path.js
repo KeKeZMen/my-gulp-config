@@ -20,5 +20,11 @@ export default {
     src: pathSrc + "/sass/*.scss",
     watch: pathSrc + "/sass/**/*.scss",
     dest: pathDest + "/css",
-  }
+  },
+
+  js: {
+    src: pathSrc + "/js/*.js",
+    watch: pathSrc + "/js/**/*.js",
+    dest: pathSrc + "/js",
+  },
 };
