@@ -21,7 +21,7 @@ const css = () => {
     .pipe(gulp.dest(path.css.dest, { sourcemaps: true }))
     .pipe(rename(app.cssRenameConf))
     .pipe(csso())
-    .pipe(gulp.dest(path.css.dest, { sourcemaps: true }));
+    .pipe(gulp.dest(path.css.dest));
 };
 
 export default css;

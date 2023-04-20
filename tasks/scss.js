@@ -22,7 +22,7 @@ const scss = () => {
     .pipe(gulp.dest(path.scss.dest, { sourcemaps: true }))
     .pipe(rename(app.cssRenameConf))
     .pipe(csso())
-    .pipe(gulp.dest(path.scss.dest, { sourcemaps: true }));
+    .pipe(gulp.dest(path.scss.dest));
 };
 
 export default scss;
