@@ -35,3 +35,8 @@ export const dev = gulp.series(
   gulp.parallel(html, app.useScss ? scss : css, js, img),
   gulp.parallel(watcher, server)
 );
+
+export const build = gulp.series(
+  clear,
+  gulp.parallel(html, app.useScss ? scss : css, js, img)
+);

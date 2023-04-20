@@ -29,8 +29,8 @@ export default {
   },
 
   img: {
-    src: pathSrc + "/img/*.png",
-    watch: pathSrc + "/img/**/*.png",
+    src: pathSrc + "/img/*.*",
+    watch: pathSrc + "/img/**/*.*",
     dest: pathDest + "/img"
   }
 };
